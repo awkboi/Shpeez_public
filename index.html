@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8" />
+  <title>Playtest</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    #game {
+      flex: 3; /* 75% */
+      border: none;
+    }
+
+    #form {
+      flex: 1; /* 25% */
+      border: none;
+    }
+  </style>
+</head>
+
 <body>
+  <!-- Game Embed -->
+  <iframe id="game" src="/game/game.html"></iframe>
 
-<h1>The a element</h1>
-
-<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
-
+  <!-- Google Form Embed -->
+  <iframe id="form"
+    src="https://docs.google.com/forms/">
+  </iframe>
 </body>
 </html>
